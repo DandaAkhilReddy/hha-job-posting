@@ -3,618 +3,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst - Healthcare Analytics Position | HHA Medicine</title>
+    <title>Hospitalist Physician - HHA Medicine | Plantation, FL</title>
+    <meta name="description" content="Join HHA Medicine as a Hospitalist Physician in Plantation, FL. Medical doctor degree, ACGME accredited residency, and Florida medical license eligibility required.">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background: #f5f7fa;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
         }
-        
-        /* Header Section */
+
         .header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
-            padding: 80px 20px 40px;
+            padding: 60px 20px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
-        
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-            background-size: cover;
-        }
-        
-        .header-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .company-name {
-            font-size: 1.2em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+
+        .header h1 {
+            font-size: 2.5rem;
             margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.2rem;
             opacity: 0.9;
         }
-        
-        .header h1 {
-            font-size: 3em;
-            margin-bottom: 15px;
-            font-weight: 700;
+
+        .company-name {
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            opacity: 0.9;
         }
-        
-        .header-subtitle {
-            font-size: 1.3em;
-            opacity: 0.95;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Main Container */
+
         .container {
-            max-width: 1200px;
-            margin: -40px auto 50px;
+            max-width: 900px;
+            margin: -40px auto 40px;
             padding: 0 20px;
-            position: relative;
-            z-index: 10;
         }
-        
-        /* Job Card */
+
         .job-card {
             background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
             overflow: hidden;
-            margin-bottom: 40px;
         }
-        
-        .job-card-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 30px 40px;
+
+        .job-header {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
             color: white;
+            padding: 40px;
         }
-        
+
+        .job-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .job-department {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
         .job-meta {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            margin-bottom: 20px;
         }
-        
+
         .meta-item {
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 1.1em;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
         }
-        
-        .job-title-section {
-            margin-bottom: 15px;
-        }
-        
-        .job-title {
-            font-size: 2.2em;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .department {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-        
-        /* Job Content */
+
         .job-content {
             padding: 40px;
         }
-        
+
         .section {
-            margin-bottom: 35px;
+            margin-bottom: 40px;
         }
-        
+
         .section-title {
-            font-size: 1.5em;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            font-size: 1.4rem;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0d9488;
+            display: inline-block;
         }
-        
-        .section-title::before {
-            content: '';
-            width: 4px;
-            height: 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 2px;
-        }
-        
-        .description-text {
-            color: #5a6c7d;
+
+        .overview-text {
+            font-size: 1.1rem;
+            color: #555;
             line-height: 1.8;
-            font-size: 1.05em;
         }
-        
-        .requirements-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .requirement-card {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 3px solid #667eea;
-        }
-        
-        .requirement-title {
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        
-        .requirement-list {
-            list-style: none;
-        }
-        
-        .requirement-list li {
-            color: #5a6c7d;
-            padding: 5px 0;
-            position: relative;
-            padding-left: 25px;
-        }
-        
-        .requirement-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #27ae60;
-            font-weight: bold;
-        }
-        
-        /* Responsibilities */
+
         .responsibilities-list {
             list-style: none;
-            margin-top: 15px;
         }
-        
+
         .responsibilities-list li {
-            background: white;
-            border: 1px solid #e0e6ed;
-            padding: 15px 20px;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            color: #5a6c7d;
+            padding: 15px 0;
+            padding-left: 35px;
             position: relative;
-            padding-left: 45px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-bottom: 1px solid #eee;
         }
-        
-        .responsibilities-list li:hover {
-            transform: translateX(5px);
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+        .responsibilities-list li:last-child {
+            border-bottom: none;
         }
-        
+
         .responsibilities-list li::before {
-            content: '▸';
+            content: "✓";
             position: absolute;
-            left: 20px;
-            color: #667eea;
+            left: 0;
+            color: #0d9488;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.2rem;
         }
-        
-        /* Benefits Section */
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .requirement-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #0d9488;
+        }
+
+        .requirement-card h4 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .requirement-card ul {
+            list-style: none;
+        }
+
+        .requirement-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+        }
+
+        .requirement-card li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: #0d9488;
+            font-weight: bold;
+        }
+
         .benefits-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
         }
-        
+
         .benefit-item {
             display: flex;
             align-items: center;
             gap: 12px;
             padding: 15px;
-            background: #f0f9ff;
-            border-radius: 8px;
-            color: #2c3e50;
+            background: #f0fdfa;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
+        .benefit-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(13,148,136,0.2);
+        }
+
         .benefit-icon {
-            font-size: 1.5em;
-        }
-        
-        /* Apply Section */
-        .apply-section {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        
-        .apply-title {
-            font-size: 2em;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .apply-description {
-            color: #5a6c7d;
-            font-size: 1.1em;
-            margin-bottom: 30px;
-        }
-        
-        .apply-buttons {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            border-radius: 10px;
             display: flex;
-            gap: 20px;
+            align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            font-size: 1.2rem;
         }
-        
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
-        }
-        
-        .btn-secondary {
-            background: white;
-            color: #667eea;
-            border: 2px solid #667eea;
-        }
-        
-        .btn-secondary:hover {
-            background: #667eea;
+
+        .apply-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 40px;
+            text-align: center;
             color: white;
-            transform: translateY(-2px);
         }
-        
-        /* Email Link Styling */
-        .email-container {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 20px;
-            border: 2px solid #e0e6ed;
+
+        .apply-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
         }
-        
-        .email-label {
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            display: block;
+
+        .apply-section p {
+            margin-bottom: 25px;
+            opacity: 0.9;
         }
-        
-        .email-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            color: #667eea;
-            font-size: 1.2em;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .email-link:hover {
-            color: #764ba2;
-            transform: translateX(5px);
-        }
-        
-        /* Salary Range */
-        .salary-badge {
+
+        .apply-btn {
             display: inline-block;
-            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 25px;
+            background: white;
+            color: #1e3c72;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
-            margin-top: 15px;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
-        /* Footer */
-        .footer {
-            background: #2c3e50;
+
+        .apply-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .contact-info a {
             color: white;
+            text-decoration: underline;
+        }
+
+        .footer {
             text-align: center;
             padding: 30px;
-            margin-top: 60px;
+            color: #666;
+            font-size: 0.9rem;
         }
-        
-        .footer p {
-            opacity: 0.8;
+
+        .badge {
+            display: inline-block;
+            background: #0d9488;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 10px;
         }
-        
-        /* Responsive */
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            color: #92400e;
+            font-weight: 500;
+        }
+
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 2em;
+                font-size: 1.8rem;
             }
-            
+
             .job-title {
-                font-size: 1.8em;
+                font-size: 1.5rem;
             }
-            
-            .job-content {
+
+            .job-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .job-header, .job-content, .apply-section {
                 padding: 25px;
             }
-            
-            .apply-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                justify-content: center;
+
+            .requirements-grid {
+                grid-template-columns: 1fr;
             }
         }
-        
-        /* Animation */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
         }
-        
-        .job-card {
-            animation: fadeIn 0.6s ease;
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <div class="header">
-        <div class="header-content">
-            <div class="company-name">HHA Medicine</div>
-            <h1>We're Hiring!</h1>
-            <p class="header-subtitle">Join our innovative healthcare technology team</p>
-        </div>
-    </div>
+    <header class="header">
+        <div class="company-name">HHA Medicine</div>
+        <h1>We're Hiring!</h1>
+        <p>Join our team of dedicated healthcare professionals</p>
+    </header>
 
-    <!-- Main Content -->
     <div class="container">
         <div class="job-card">
-            <div class="job-card-header">
-                <div class="job-title-section">
-                    <h2 class="job-title">Data Analyst</h2>
-                    <p class="department">Healthcare Analytics Department</p>
-                </div>
+            <div class="job-header">
+                <h2 class="job-title">Hospitalist Physician</h2>
+                <p class="job-department">Medical / Clinical Services</p>
                 <div class="job-meta">
-                    <div class="meta-item">
-                        <span>📍</span>
-                        <span>Corpus Christi, TX</span>
-                    </div>
-                    <div class="meta-item">
-                        <span>💼</span>
-                        <span>Full-Time</span>
-                    </div>
-                    <div class="meta-item">
-                        <span>🏥</span>
-                        <span>Healthcare Industry</span>
-                    </div>
-                    <div class="meta-item">
-                        <span>📅</span>
-                        <span>Immediate Start</span>
-                    </div>
+                    <span class="meta-item">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        Plantation, FL
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                        </svg>
+                        Full-Time
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.5.5 0 0 0-.708 0l-.914.914a.5.5 0 0 0 .707.708l.915-.914a.5.5 0 0 0 0-.708zM8 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 1a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1h3z"/>
+                        </svg>
+                        Healthcare
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                        Immediate Start
+                    </span>
                 </div>
             </div>
 
             <div class="job-content">
-                <!-- Position Overview -->
-                <div class="section">
+                <section class="section fade-in">
                     <h3 class="section-title">Position Overview</h3>
-                    <p class="description-text">
-                        We are seeking a talented and detail-oriented Data Analyst to join our Healthcare Analytics team in Corpus Christi, Texas. This role is crucial in transforming complex healthcare data into actionable insights that drive operational excellence and improve patient care outcomes. You will be at the forefront of healthcare innovation, working with cutting-edge billing software and analytics tools to optimize our medical practice operations.
+                    <p class="overview-text">
+                        HHA Medicine is seeking a dedicated and skilled Hospitalist Physician to join our clinical team in Plantation, Florida. As a Hospitalist, you will provide comprehensive inpatient care, managing the medical needs of hospitalized patients from admission through discharge. This role offers the opportunity to practice evidence-based medicine in a collaborative environment while making a meaningful impact on patient outcomes and quality of care.
                     </p>
-                    <div class="salary-badge">
-                        💰 Competitive Salary & Benefits Package
-                    </div>
-                </div>
+                </section>
 
-                <!-- Key Responsibilities -->
-                <div class="section">
+                <section class="section fade-in">
                     <h3 class="section-title">Key Responsibilities</h3>
                     <ul class="responsibilities-list">
-                        <li>Extract, transform, and analyze complex healthcare data using Ingenious Med billing software to identify trends, patterns, and opportunities for improvement</li>
-                        <li>Develop and maintain comprehensive dashboards and reports that provide real-time insights into operational efficiency and financial performance metrics</li>
-                        <li>Collaborate with clinical teams to analyze patient outcome data and identify areas for quality improvement initiatives</li>
-                        <li>Design and implement data quality assurance procedures to ensure accuracy and reliability of all analytical outputs</li>
-                        <li>Create predictive models to forecast revenue cycles, patient volumes, and resource utilization</li>
-                        <li>Present data-driven recommendations to senior management and stakeholders through compelling visualizations and presentations</li>
-                        <li>Automate routine reporting processes to increase efficiency and reduce manual workload</li>
-                        <li>Ensure compliance with HIPAA regulations and maintain the highest standards of data security and patient privacy</li>
+                        <li>Provide comprehensive medical care to hospitalized patients, including admission, daily rounds, and discharge planning</li>
+                        <li>Diagnose and treat a wide range of acute and chronic medical conditions in the inpatient setting</li>
+                        <li>Coordinate care with specialists, nursing staff, and other healthcare professionals to ensure optimal patient outcomes</li>
+                        <li>Document patient encounters accurately and timely in the electronic health record system</li>
+                        <li>Communicate effectively with patients, families, and caregivers regarding diagnosis, treatment plans, and discharge instructions</li>
+                        <li>Participate in quality improvement initiatives and adhere to evidence-based clinical guidelines</li>
+                        <li>Respond to urgent and emergent patient care needs during assigned shifts</li>
+                        <li>Collaborate with case management and social services for appropriate discharge planning and transitions of care</li>
                     </ul>
-                </div>
+                </section>
 
-                <!-- Requirements -->
-                <div class="section">
+                <section class="section fade-in">
                     <h3 class="section-title">Requirements & Qualifications</h3>
                     <div class="requirements-grid">
                         <div class="requirement-card">
-                            <div class="requirement-title">Education & Experience</div>
-                            <ul class="requirement-list">
-                                <li>Bachelor's degree in Data Science, Statistics, Computer Science, or related field</li>
-                                <li>2+ years of experience in data analysis, preferably in healthcare</li>
-                                <li>Experience with medical billing systems</li>
-                                <li>Knowledge of healthcare regulations and compliance</li>
+                            <h4>Education & Training <span class="badge">Required</span></h4>
+                            <ul>
+                                <li>Medical Doctor (MD) degree or foreign equivalent</li>
+                                <li>Completion of ACGME accredited residency training in Internal Medicine or Family Medicine</li>
                             </ul>
                         </div>
                         <div class="requirement-card">
-                            <div class="requirement-title">Technical Skills</div>
-                            <ul class="requirement-list">
-                                <li>Proficiency in Ingenious Med billing software (training provided)</li>
-                                <li>Advanced Excel and SQL skills</li>
-                                <li>Experience with data visualization tools (Tableau, Power BI)</li>
-                                <li>Statistical analysis and predictive modeling</li>
+                            <h4>Licensure & Certification <span class="badge">Required</span></h4>
+                            <ul>
+                                <li>Eligibility for Florida medical license</li>
+                                <li>Board certified or board eligible in Internal Medicine or Family Medicine</li>
+                                <li>DEA license eligibility</li>
                             </ul>
                         </div>
                         <div class="requirement-card">
-                            <div class="requirement-title">Soft Skills</div>
-                            <ul class="requirement-list">
-                                <li>Strong analytical and problem-solving abilities</li>
-                                <li>Excellent communication and presentation skills</li>
-                                <li>Detail-oriented with high accuracy standards</li>
-                                <li>Ability to work independently and in teams</li>
+                            <h4>Clinical Skills</h4>
+                            <ul>
+                                <li>Strong diagnostic and clinical decision-making abilities</li>
+                                <li>Proficiency in managing complex medical patients</li>
+                                <li>Experience with electronic health record systems</li>
+                                <li>Excellent procedural skills appropriate for hospitalist practice</li>
                             </ul>
                         </div>
                         <div class="requirement-card">
-                            <div class="requirement-title">Preferred Qualifications</div>
-                            <ul class="requirement-list">
-                                <li>Master's degree in relevant field</li>
-                                <li>Healthcare analytics certifications</li>
-                                <li>Experience with Python or R</li>
-                                <li>Knowledge of ICD-10, CPT coding systems</li>
+                            <h4>Preferred Qualifications</h4>
+                            <ul>
+                                <li>Previous hospitalist or inpatient medicine experience</li>
+                                <li>Additional certifications in critical care or geriatrics</li>
+                                <li>Bilingual abilities (English/Spanish preferred)</li>
+                                <li>Experience with quality improvement programs</li>
                             </ul>
                         </div>
                     </div>
+                </section>
+
+                <div class="highlight-box fade-in">
+                    <p><strong>Note:</strong> Medical doctor degree or foreign equivalent, completion of Accreditation Council for Graduate Medical Education (ACGME) accredited residency training in either internal medicine or family medicine, and eligibility for Florida medical license required.</p>
                 </div>
 
-                <!-- Benefits -->
-                <div class="section">
-                    <h3 class="section-title">What We Offer</h3>
+                <section class="section fade-in">
+                    <h3 class="section-title">Benefits & Compensation</h3>
                     <div class="benefits-grid">
                         <div class="benefit-item">
-                            <span class="benefit-icon">🏥</span>
-                            <span>Comprehensive health, dental, and vision insurance</span>
+                            <div class="benefit-icon">💰</div>
+                            <span>Competitive Salary</span>
                         </div>
                         <div class="benefit-item">
-                            <span class="benefit-icon">💰</span>
-                            <span>401(k) with company matching</span>
+                            <div class="benefit-icon">🏥</div>
+                            <span>Comprehensive Health Insurance</span>
                         </div>
                         <div class="benefit-item">
-                            <span class="benefit-icon">🏖️</span>
-                            <span>Generous PTO and holiday schedule</span>
+                            <div class="benefit-icon">📈</div>
+                            <span>401(k) Retirement Plan</span>
                         </div>
                         <div class="benefit-item">
-                            <span class="benefit-icon">📚</span>
-                            <span>Professional development opportunities</span>
+                            <div class="benefit-icon">🏖️</div>
+                            <span>Generous PTO</span>
                         </div>
                         <div class="benefit-item">
-                            <span class="benefit-icon">💻</span>
-                            <span>Flexible work arrangements</span>
+                            <div class="benefit-icon">📚</div>
+                            <span>CME Allowance</span>
                         </div>
                         <div class="benefit-item">
-                            <span class="benefit-icon">🎓</span>
-                            <span>Tuition reimbursement program</span>
+                            <div class="benefit-icon">⚖️</div>
+                            <span>Malpractice Coverage</span>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎓</div>
+                            <span>Professional Development</span>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🗓️</div>
+                            <span>Flexible Scheduling</span>
                         </div>
                     </div>
-                </div>
+                </section>
+            </div>
 
-                <!-- Apply Section -->
-                <div class="apply-section">
-                    <h3 class="apply-title">Ready to Make a Difference?</h3>
-                    <p class="apply-description">
-                        Join our mission to transform healthcare through data-driven insights. Take the next step in your career with HHA Medicine.
-                    </p>
-                    
-                    <div class="apply-buttons">
-                        <button class="btn btn-primary" onclick="window.location.href='#apply-now'">
-                            <span>📝</span>
-                            <span>View Full Details & Apply</span>
-                        </button>
-                        <button class="btn btn-secondary" onclick="window.location.href='mailto:asimon@hhamedicine.com?subject=Data Analyst Position Application&body=Please attach your CV and cover letter.'">
-                            <span>✉️</span>
-                            <span>Quick Apply via Email</span>
-                        </button>
-                    </div>
-
-                    <div class="email-container" id="apply-now">
-                        <span class="email-label">Direct Application Email:</span>
-                        <a href="mailto:asimon@hhamedicine.com?subject=Data Analyst Position - Application&body=Dear Hiring Team,%0D%0A%0D%0AI am interested in the Data Analyst position at HHA Medicine in Corpus Christi, TX.%0D%0A%0D%0APlease find my CV attached.%0D%0A%0D%0ABest regards," class="email-link">
-                            <span>📧</span>
-                            <span>asimon@hhamedicine.com</span>
-                        </a>
-                        <p style="margin-top: 15px; color: #7f8c8d; font-size: 0.95em;">
-                            Please include your CV, cover letter, and any relevant portfolio work. We respond to all applications within 48 hours.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Additional Information -->
-                <div class="section">
-                    <h3 class="section-title">About HHA Medicine</h3>
-                    <p class="description-text">
-                        HHA Medicine is a leading healthcare provider committed to delivering exceptional patient care through innovative technology and data-driven solutions. Our team of dedicated professionals works collaboratively to improve healthcare outcomes and operational efficiency. We believe in fostering a culture of continuous learning, innovation, and excellence.
-                    </p>
-                    <p class="description-text" style="margin-top: 15px;">
-                        <strong>Equal Opportunity Employer:</strong> HHA Medicine is an equal opportunity employer committed to building a diverse and inclusive team. We welcome applications from all qualified candidates regardless of race, gender, age, religion, identity, or experience.
-                    </p>
+            <div class="apply-section">
+                <h3>Ready to Join Our Team?</h3>
+                <p>Take the next step in your medical career with HHA Medicine</p>
+                <a href="mailto:asimon@hhamedicine.com?subject=Application%20for%20Hospitalist%20Physician%20-%20Plantation%2C%20FL" class="apply-btn">Apply Now</a>
+                <div class="contact-info">
+                    <p>Questions? Contact us at <a href="mailto:asimon@hhamedicine.com">asimon@hhamedicine.com</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2025 HHA Medicine. All rights reserved. | Corpus Christi, TX</p>
-    </div>
+    <footer class="footer">
+        <p>&copy; 2025 HHA Medicine. All rights reserved.</p>
+        <p>HHA Medicine is an Equal Opportunity Employer</p>
+    </footer>
 
     <script>
-        // Smooth scroll to apply section
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center'
-                    });
-                }
-            });
-        });
-
-        // Add animation on scroll
+        // Fade-in animation on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -623,14 +495,17 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeIn 0.6s ease forwards';
+                    entry.target.classList.add('visible');
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.section').forEach(section => {
-            observer.observe(section);
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
         });
+
+        // Smooth scroll behavior
+        document.documentElement.style.scrollBehavior = 'smooth';
     </script>
 </body>
 </html>
